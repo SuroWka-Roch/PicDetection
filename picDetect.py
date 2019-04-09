@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 import copy
+from sys import argv
 HIGHT = 0.3
 TOLERANCE = 0.3
 
-
-with open("normalized.dat","r") as file:
+print(argv[1])
+with open(str(argv[1]),"r") as file:
   data = [[float(line.split("\t")[0].strip()),float(line.split("\t")[1].strip())] for line in  file]
 piks = []
 pochodna = []
